@@ -9,6 +9,15 @@
 
 class TokenService {
   // Напиши свой код здесь
+  subscribe(callback) {
+	  callback();
+  }
+  setToken(value) {
+
+  }
+  removeToken() {}
+  getToken() {}
+
 }
 
 window.TokenService = TokenService;
