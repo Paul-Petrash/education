@@ -21,8 +21,8 @@ function fullSum(...args) {
   }
 
   for (let i = 0; i < args.length; i++) {
-	if (isNaN(args[i]) || !isNumber(args[i])) {
-		throw new Error('Wrong Argument Type');
+	if (!isNumber(args[i]) || isNaN(args[i])) {
+		throw Error('Wrong Argument Type');
 	} else {
 		sum = sum + args[i];
 	}
